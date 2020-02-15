@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+%%%%%%%%%%%%%%%%%%%%
+\newcommand{\hide}[1]{}
+
+
+
+\usepackage{natbib}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+
+
+\hide{
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cases}		 
+\usepackage{cutwin}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{ifthen}
+\usepackage{lipsum}
+\usepackage{mathrsfs}	
+\usepackage{multimedia}
+\usepackage{wrapfig}
+}
+\bibliographystyle{humanbio}
+
+
+\usepackage[utf8]{inputenc}
+
+\newcommand{\itemlist}[1]{\begin{itemize}#1\end{itemize}}
+\newcommand{\enumlist}[1]{\begin{enumerate}#1\end{enumerate}}
+\newcommand{\desclist}[1]{\begin{description}#1\end{description}}
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+
+\newcommand{\Answer}[1]{\begin{quote}{\color{blue}#1}\end{quote}}
+\newcommand{\AND}{\wedge}
+\newcommand{\OR}{\vee}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lra}{\leftrightarrow}
+
+\title {{\bf RISC V Based Drone Flight Controller} \\
+\large{ECE 562 Project Proposal}}
+
+\author{
+Mitchell Dzurick - mitchdz@email.arizona.edu\\
+Lena Voytek - dvoytek@email.arizona.edu\\
+Amir Mohammad Asdagh Pour - asdaghpour@email.arizona.edu}
+\date{2/17/2020}
+\begin{document}
+
+\maketitle
+\tableofcontents 
+\clearpage
+
+\section{Names and email addresses of group members}
+Mitchell Dzurick - mitchdz@email.arizona.edu\\
+Lena Voytek - dvoytek@email.arizona.edu\\
+Amir Mohammad Asdagh Pour - asdaghpour@email.arizona.edu
+
+\section{Topic Description}
+The goal of this project is to create a flight controller for a drone using a RISC V architecture. This includes purchasing and building a micro drone that will fashion a RISC V FPGA in order to create custom ISA subroutines for the drone. These custom subroutines will range from simple things such as move forward x feet to more complex things such as move to a certain GPS locaiton. The implementation of the more complex subroutines will get completed if time permits.
+
+\section{Motivation}
+The team taking on this project simply likes building and making drones. The project seems doable in a semester, but still offers a fun and challenging thing to solve. The goal here is not to make something super novel, but rather to have fun and learn a lot about RISC V ISA in the process.
+
+\section{Related work}
+\iffalse
+Related work. What has been previously done similar or related to this topic? (Limit this to 3 –
+5 important related works. Your final project will have many more)
+\fi
+\subsection{}
+
+\subsection{}
+
+\subsection{}
+
+\subsection{}
+
+
+
+Proposed methodology. How do you intend to perform the project? Provide details
+of evaluation strategy, methods, simulators, etc.
+
+Proposed timelines. Provide a chart or table with the proposed timeline for work broken up
+among the group members.
+
+Anticipated results.
+
+References.
+
+
+
+
+
+
+
+
+\end{document}
