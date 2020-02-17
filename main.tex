@@ -63,6 +63,11 @@ Amir Mohammad Asdagh Pour - asdaghpour@email.arizona.edu}
 \begin{document}
 
 \maketitle
+\begin{center}
+\textbf{\url{https://github.com/mitchdz/ECE562}}
+\end{center}
+
+
 \tableofcontents 
 \clearpage
 
@@ -78,35 +83,69 @@ The goal of this project is to create a flight controller for a drone using a RI
 The team taking on this project simply likes building and making drones. The project seems doable in a semester, but still offers a fun and challenging thing to solve. The goal here is not to make something super novel, but rather to have fun and learn a lot about RISC V ISA in the process.
 
 \section{Related work}
+\subsection{Worlds smallest autonomous rotor drone}
+drone utilizing the GAP8 processor which is running 32-bit RISC-V to achieve a low power autonomous drone.
+
+\subsection{This tiny drone with a tiny brain is smart enough to fly itself}
+drone uses a mobile processor named GAP8. It packs eight processing cores optimized for running artificial intelligence applications.
+
+\subsection{Development of Drone Capable of Autonomous Flight Using GPS}
+An experimental drone was developed by equipping a
+microcomputer of Raspberry Pi 2.0  and a GPS
+sensor
+
+
+
+\section{Proposed methodology}
+The flight controller shall consist of an FPGA capable of booting verilog code. The codebase that is being looked at is ultraembedded's 32-bit RISC-V verilog implementation located at  \url{https://github.com/ultraembedded/riscv} which can be compiled using Vivado. This allows us to create our own ISA and accompanying instructions to do very specific tasks. Before this is done, a drone needs to be constructed and flight tested with a known-working flight controller such as the Naze32 flight controller. Once a build is done, the FPGA will be loaded with the RISCV core and linux will be put on the core. An attempt to control the drone via the FPGA GPIO (General Purpose Input Ouput) ports will be done. After being able to control the drone simply through Linux, the core will be modified for special subroutines. To evaluate the project, the 
+
+
+\section{Proposed Timeline}
 \iffalse
-Related work. What has been previously done similar or related to this topic? (Limit this to 3 –
-5 important related works. Your final project will have many more)
-\fi
-\subsection{}
-
-\subsection{}
-
-\subsection{}
-
-\subsection{}
-
-
-
-Proposed methodology. How do you intend to perform the project? Provide details
-of evaluation strategy, methods, simulators, etc.
-
 Proposed timelines. Provide a chart or table with the proposed timeline for work broken up
 among the group members.
+\fi
 
-Anticipated results.
+The following table shows a general outline for the project. These dates are of course subject to change, but are a guideline.
 
-References.
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ Date & Task & Member \\ 
+ \hline
+ 2/21 & Research Parts & Lena, Amir \\
+ 2/21 & Install software & Mitchell, Lena, Amir \\
+ 2/21 & Build RISC-V core & Mitchell, Lena \\
+ 2/31 & Purchase parts & Mitchell, Lena, Amir \\ 
+ 3/6 & Procure parts & Mitchell \\ 
+ 3/13 & Load Linux on FPGA & Lena, Mitchell\\
+ 3/13 & Base drone build & Mitchell, Amir\\
+ 3/31 & Get drone flying using Linux & Mitchell, Lena, Amir\\
+ 4/10 & Build custom ISA and instructions & Mitchell, Lena, Amir \\
+ 4/24 & Test all ISA implements & Mitchell, Lena, Amir \\
+ \hline
+\end{tabular}
+\end{center}
 
 
+\section{Anticipated Results}
+The results of this project is to have a working drone that has a small set of instructions and a custom ISA for certain subroutines. 
+
+\clearpage
+\section{References}
+
+Ultraembedded RISC-v \\
+\tab\href{https://github.com/ultraembedded/riscv}{https://github.com/ultraembedded/riscv}
+
+Worlds smallest autonomous rotor drone\\
+\tab\href{https://riscv.org/2018/05/fast-company-article-this-tiny-drone-with-a-tiny-brain-is-smart-enough-to-fly-itself/}{https://riscv.org/2018/05/fast-company-article-this-tiny-drone-with-a-tiny-brain-is-smart-enough-to-fly-itself}
+
+This tiny drone with a tiny brain is smart enough to fly itself \\
+\tab\href{https://www.fastcompany.com/40575392/this-tiny-drone-with-a-tiny-brain-is-smart-enough-to-fly-itself}{https://www.fastcompany.com/40575392/this-tiny-drone-with-a-tiny-brain-is-smart-enough-to-fly-itself}
 
 
-
-
+Development of Drone Capable of Autonomous Flight Using GPS \\
+\tab\href{ttps://link.springer.com/article/10.1186/s40537-019-0214-3}{ttps://link.springer.com/article/10.1186/s40537-019-0214-3}
 
 
 \end{document}
